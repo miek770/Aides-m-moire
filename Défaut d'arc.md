@@ -1,17 +1,18 @@
 # Aide-mémoire - Défaut d'arc
 
-## Normes
+## Normes et guides
 
-- ANSI/NFPA, *NFPA 70E – Standard for electrical safety in the workplace, 2015 Edition*, 2014-07-29
-- CSA Group, *CSA Z462-15 – Workplace electrical safety,* 2015-01-01
-- La version 2015 apporte des changements importants, notamment :
-    - La catégorie 0 est éliminée;
-    - La distance d’approche interdite est éliminée;
-    - Il est interdit d’utiliser la méthode de calcul de l’énergie incidente conjointement avec les catégories d’ÉPI présentées aux tableaux 4B et 4C. Cependant, l’article 4.3.5.5 (c) (iii) nous permet d’utiliser la classification d’ÉPI du site, ce qui correspond très probablement aux tableaux 4B et 4C. Demander une confirmation au client au début du projet.
+- NFPA 70E, *Standard for electrical safety in the workplace*
+    - Applicable aux États-Unis
+- CSA Z462, *Workplace electrical safety*
+    - La version 2015 apporte des changements importants, notamment :
+        - La catégorie 0 est éliminée;
+        - La distance d’approche interdite est éliminée;
+        - Il est interdit d’utiliser la méthode de calcul de l’énergie incidente conjointement avec les catégories d’ÉPI présentées aux tableaux 4B et 4C. Cependant, l’article 4.3.5.5 (c) (iii) nous permet d’utiliser la classification d’ÉPI du site, ce qui correspond très probablement aux tableaux 4B et 4C. Demander une confirmation au client au début du projet.
 
 ## Intrants
 
-### ÉQUIPEMENTS DE PROTECTION INDIVIDUELS
+### Équipements de protection individuels
 
 - Au début du projet, demander une confirmation du client pour la classification d’ÉPI à utiliser. Nécessaire depuis la version 2015 de la norme CSA Z462 (voir section « Normes » ici-haut).
 
@@ -36,22 +37,22 @@
 - Base kV and MVA of impedance branches;
 - Overload heater resistance;
 - Equipment cable impedance;
-- Transformer winding connections, grounding types, and grounding parameters to determine the K~2~ factor per IEEE 1584.
+- Transformer winding connections, grounding types, and grounding parameters to determine the K2 factor per IEEE 1584.
 
 ### Power Grid Data
 
 - Nominal kV;
 - %V and angle;
-- 3-Phase MVA~SC~ and X/R;
-- Grounding types and parameters to determine the K~2~ factor per IEEE 1584.
+- 3-Phase MVASC and X/R;
+- Grounding types and parameters to determine the K2 factor per IEEE 1584.
 
 ### Synchronous Generator Data
 
 - Rated MW, kV and power factor;
-- X~d~’’, X~d~’ and X/R;
+- Xd’’, Xd’ and X/R;
 - Generator type (i.e., salient pole, round rotor);
 - Data required for generator decrement curves;
-- Grounding types and parameters to determine the K~2~ factor per IEEE 1584.
+- Grounding types and parameters to determine the K2 factor per IEEE 1584.
 
 ### Inverter Data
 
@@ -61,26 +62,26 @@
 ### Synchronous Motor Data
 
 - Rated kW / HP, kV and the number of poles;
-- X~d~’’, X~d~’ and X/R;
-- % LRC, X~d~ and T~do~’ for IEC short-circuit calculation;
-- Grounding types and parameters to determine the K~2~ factor per IEEE 1584.
+- Xd’’, Xd’ and X/R;
+- % LRC, Xd and Tdo’ for IEC short-circuit calculation;
+- Grounding types and parameters to determine the K2 factor per IEEE 1584.
 
 ### Induction Motor Data
 
 - Rated kW/hp and kV;
 - X/R plus one of the following:
-    - X~SC~ at ½ cycle and 1.5-4 cycles if ANSI short-circuit Z option is set to X~SC~; or
+    - XSC at ½ cycle and 1.5-4 cycles if ANSI short-circuit Z option is set to XSC; or
     - % LRC if ANSI short-circuit Z option is set to Std MF; or
-    - % LRC and T~d~’ for IEC short-circuit calculations.
-- Grounding types and parameters to determine the K~2~ factor per IEEE 1584.
+    - % LRC and Td’ for IEC short-circuit calculations.
+- Grounding types and parameters to determine the K2 factor per IEEE 1584.
 
 ### Lumped Load Data
 
 - Rated MVA and kV;
 - % motor load;
-- % LRC, X/R and X~SC~ for ½ cycle and 1.5-4 cycles;
-- X’ and T~d~’ for IEC short-circuit calculation;
-- Grounding types and parameters to determine the K~2~ factor per IEEE 1584.
+- % LRC, X/R and XSC for ½ cycle and 1.5-4 cycles;
+- X’ and Td’ for IEC short-circuit calculation;
+- Grounding types and parameters to determine the K2 factor per IEEE 1584.
 
 ### High Voltage Circuit Breaker Data
 
